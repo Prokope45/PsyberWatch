@@ -1,6 +1,14 @@
 # PsyberWatch
 A Kansas State University STAT-766 project involving the multi-classification of legitimate, unsolicited, and harmful emails for cybersecurity purposes.
 
+## Quick Setup
+This setup assumes that your Python executable is on PATH.
+
+1. Create local virtual environment `python3 -m venv .venv`.
+2. Activate virtual environment `source .venv/bin/activate`.
+3. Install dependencies `pip install -r requirements.txt`.
+4. Access jupyter notebooks and inspect cells.
+
 ## Ham, Spam, or Phish?
 
 ### Problem Statement
