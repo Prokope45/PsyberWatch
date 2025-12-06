@@ -4,8 +4,12 @@ from nltk.corpus import stopwords
 import re
 from nltk.tokenize import word_tokenize
 
+import platform
+import torch
+
 lemmatizer = WordNetLemmatizer()
 stop_words = set(stopwords.words("english"))
+
 
 def clean_text(text):
     # 1. Lowercase
@@ -30,3 +34,12 @@ def clean_text(text):
     tokens = [lemmatizer.lemmatize(w) for w in tokens]
 
     return " ".join(tokens)
+
+
+def get_device_type():
+    if platform.system() in ["Windows", "Linux"]:
+        return "cuda" if torch.cuda.is_available() else "cpu"
+    elif platform.system() == "Darwin":
+        return "mps" if torch.backends.mps.is_available() else "cpu"
+    else:
+        return "cpu"

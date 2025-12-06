@@ -2,3 +2,7 @@
 .env
 /data
 *__pycache__
+*__init__.py
+*.ipynb_checkpoints/
+.svm-venv/
+*.virtual_documents/
