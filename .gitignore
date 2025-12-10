@@ -7,3 +7,4 @@
 *.ipynb_checkpoints/
 .svm-venv/
 *.virtual_documents/
+email_classifier.log
