@@ -1,10 +1,8 @@
-.venv
+*-venv/
 .env
-/data
-/models/
+*/data/
+*/models/
 *__pycache__
-*__init__.py
 *.ipynb_checkpoints/
-.svm-venv/
 *.virtual_documents/
 email_classifier.log

@@ -3,8 +3,8 @@ import time
 import panel as pn
 import pandas as pd
 import joblib
-from utils import clean_text
-from logging_config import logger
+from src.psyberwatch.utils import clean_text
+from src.model_logging.logging_config import logger
 
 
 sbert = joblib.load("./models/sbert.joblib")
